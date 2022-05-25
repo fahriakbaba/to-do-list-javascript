@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formlarla Çalışmak - Bölüm Sonu Egzersizi | Javascript ile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-sm-6 mx-auto mt-5">
+        <div class="card">
+          <form>
+            <div class="card-header">
+              <div
+                class="card-title text-center text-uppercase fw-bold fs-4"
+              >
+                to do list
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <input
+                  id="input-text"
+                  class="form-control w-75"
+                  type="text"
+                  placeholder="Type list"
+                />
+                <button
+                  id="addItemButton"
+                  class="btn btn-primary input-width"
+                  type="submit"
+                >
+                  ADD
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="card mt-2">
+          <div id="add-list" class="card-body d-flex flex-column">
+            <div class="delete-all-container d-flex justify-content-between">
+              <span class="h4 ps-2 fw-lighter">Task List </span>
+              <button
+                id="deleteAll"
+                class="btn btn-outline-danger mb-2 input-width"
+                type="submit"
+              >
+                DELETE ALL
+              </button>
+            </div>
+            <hr />
+            <ul id="list" class="list-group list-unstyled"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
